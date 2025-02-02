@@ -1,0 +1,25 @@
+[project]
+name = "package-uv"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "zainabbasi38", email = "zainabbasi7534@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "litellm>=1.60.0",
+    "ruff>=0.9.4",
+]
+
+[project.scripts]
+hello = "package_uv.hello:hello"
+main = "package_uv.hello:main"
+llm1 = "package_uv.llm:gemini"
+llm2 = "package_uv.llm:gemini2"
+
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,21 @@
+[project]
+name = "second-uv"
+version = "0.1.0"
+description = "Zain Abbasi"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ruff>=0.9.4",
+]
+
+dependencies = [
+    "litellm>=1.59.8",
+    "ruff>=0.9.3",
+]
+
+[python.scripts]
+muneeb = "hello.main:ielts"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
